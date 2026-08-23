@@ -4,8 +4,9 @@ pipeline {
     stages {
 
         stage('Code Checkout') {
-            steps {
-                git 'https://github.com/vaishnavig1706/jenkins_repo.git'
+            steps {  
+	        git branch: main,
+		    url: 'https://github.com/vaishnavig1706/jenkins_repo.git'
             }
         }
 
